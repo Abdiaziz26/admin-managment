@@ -435,7 +435,7 @@ function deleteStudent(event) {
 document.getElementById("searchInput").addEventListener("input", searchTeachers);
 
 function searchTeachers() {
-  const input = document.getElementById('teacherSearchInput').value.trim().toLowerCase();  // Get search input value
+  const input = document.getElementById('searchInput').value.trim().toLowerCase();  // Get search input value
   const teachers = JSON.parse(localStorage.getItem("teachers")) || [];  // Get all teachers from localStorage
   const tableBody = document.getElementById("teacherList");
   tableBody.innerHTML = "";  // Clear the table before showing filtered results
